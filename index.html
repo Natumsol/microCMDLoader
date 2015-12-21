@@ -7,8 +7,9 @@
 </head>
 
 <body>
-    <script src="microCmdLoader.js"></script>
+    <script src="/js/microCmdLoader.js"></script>
     <script>
+    	myLoader.set({root:"/js/"})
         myLoader.use("index.js", function(index){
             console.log("index.js is loaded!!");
         })
