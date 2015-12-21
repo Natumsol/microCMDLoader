@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>test</title>
 </head>
-
+<p style="color:red">请打开控制台查看。</p>
 <body>
-    <script src="/js/microCmdLoader.js"></script>
+    <script src="js/microCmdLoader.js"></script>
     <script>
-    	myLoader.set({root:"/js/"})
+    	myLoader.set({root:location.pathname + "js/"})
         myLoader.use("index.js", function(index){
             console.log("index.js is loaded!!");
         })
